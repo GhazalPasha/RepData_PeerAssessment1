@@ -7,6 +7,7 @@ output:
 ##Loading and preprocessing the data
 First data is loaded and date column is changed from character to Date format.
 ```{r}
+setwd("~/DataScience/5. ReproducibleResearch/project1")
 activitydata <- read.csv(file="activity.csv")
 activitydata$date <- as.Date(activitydata$date, "%Y-%m-%d")
 ```
